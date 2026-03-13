@@ -1,21 +1,21 @@
 [Setup]
-AppName=LivelyRandomPlaylist
+AppName=LivelyShufflePlaylist
 AppVersion=1.0
-AppPublisher=CalebLevesque
-AppId=LivelyRandomPlaylist
+AppPublisher=RoboticsEqualsFun
+AppId=LivelyShufflePlaylist
 AppPublisherURL=https://github.com/followedmefully/Lively-Wallpaper-Playlist
-DefaultDirName={autopf}\LivelyRandomPlaylist
+DefaultDirName={autopf}\LivelyShufflePlaylist
 PrivilegesRequiredOverridesAllowed=dialog
-DefaultGroupName=LivelyRandomPlaylist
-OutputBaseFilename=LivelyRandomPlaylistInstaller
-UninstallDisplayIcon={app}\LivelyRandomPlaylist.exe
+DefaultGroupName=LivelyShufflePlaylist
+OutputBaseFilename=LivelyShufflePlaylistInstaller
+UninstallDisplayIcon={app}\LivelyShufflePlaylist
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 CloseApplications=yes
 
 [Files]
-Source: "LivelyRandomPlaylist.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "LivelyShufflePlaylist.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "config.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "icon.ico"; DestDir: "{app}"; Flags: ignoreversion; Attribs: hidden
 
@@ -23,11 +23,11 @@ Source: "icon.ico"; DestDir: "{app}"; Flags: ignoreversion; Attribs: hidden
 Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription: "Additional shortcuts:"
 
 [Icons]
-Name: "{group}\LivelyRandomPlaylist"; Filename: "{app}\LivelyRandomPlaylist.exe"; IconFilename: "{app}\icon.ico"
-Name: "{userdesktop}\LivelyRandomPlaylist"; Filename: "{app}\LivelyRandomPlaylist.exe"; IconFilename: "{app}\icon.ico"; Tasks: desktopicon
+Name: "{group}\LivelyShufflePlaylist"; Filename: "{app}\LivelyShufflePlaylist"; IconFilename: "{app}\icon.ico"
+Name: "{userdesktop}\LivelyShufflePlaylist"; Filename: "{app}\LivelyShufflePlaylist"; IconFilename: "{app}\icon.ico"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\LivelyRandomPlaylist.exe"; Description: "Launch LivelyRandomPlaylist after installation"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\LivelyShufflePlaylist"; Description: "Launch LivelyShufflePlaylist after installation"; Flags: nowait postinstall skipifsilent
 
 [InstallDelete]
 Type: dirifempty; Name: "{app}"
